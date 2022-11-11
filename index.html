@@ -1,39 +1,31 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
-<title>jQuery New Account Creation Form</title>
 <link rel="stylesheet" href="Lab 11.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<title>jQuery New Account Creation Form</title>
+<style>
+.errorMessage {
+    color: red; 
+}
+</style>
 </head>
-
 <body>
-<h1>jQuery New Account Creation Form</h1>
-
+<h1>New Account Creation Form</h1>
 <form id="new-account-form">
-    <label for="email"><b>Email</b></label>
-<div><p><input type="email" id="1" name="email" required value="" placeholder="Enter your email address"></p></div>
-
-<label for="psw"><b>Password</b></label>
-<p><input type="password" id="2" name="psw" required value="" placeholder="Enter a password"></p>
-
-<label for="psw-repeat"><b>Reenter the Password</b></label>
-<p><input type="password" id="3" name="psw-repeat" required value="" placeholder="Reenter the password"></p>
-
-<button id ="sub" type="button">Create Account</button>
-
+<input type="email" size="30" name="email" value="" placeholder="Enter your email address">
+<div id="emailErrorMessage"  class="errorMessage"></div>
+<p><input type="password" size="30" name="password1" value="" placeholder="Enter a password"></p>
+<p></p><input type="password" size="30" name="password2" value="" placeholder="Reenter the password">
+<div id="passwordErrorMessage" class="errorMessage"></div>
+</p>
+<button type="submit">Create Account</button>
 </form>
+<span id='output' style="font-weight: bold"></span>
+<!--<p>Form Output: <span id="output"></span></p>-->
 
-<p>Form Output: <span id="output"></span></p>
-<p id="demo"></p>
-<div>
-
-</div>
-<h4>
-
-</h4>
-
-<script src="Lab 11.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="Lab 11.js">   
+</script>
 </body>
 </html>
